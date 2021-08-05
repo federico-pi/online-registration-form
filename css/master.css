@@ -1,0 +1,155 @@
+/* BUG:
+
+- change color to #b8bdc0 for required and choose state
+
+- Fix required alignment after click
+
+- Fix Choose state alignment and height
+
+- Change border color to focus to #46698b
+
+- click on checkboxes not working
+
+- Add mouse when hovering over button
+
+- Add media query
+
+- Check instructions to see what's missing
+
+- Check requirements to see what's missing
+
+- Doublecheck everything
+
+ */
+
+html {
+box-sizing: border-box;
+font-family: 'Merriweather', serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #2d3945;
+}
+
+h2, legend {
+  color: #2d3945;
+}
+
+h1 {
+  font-size: 23px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  padding: 20px 15px 0;
+}
+
+.page-des {
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 25px;
+  border-bottom: 5px solid #2d3945;
+  margin-bottom: 4px;
+}
+
+.sign-up-form {
+  padding-top: 25px;
+  border-top: 2px solid #2d3945;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+label, p {
+  font-size: 18px;
+  color: #929eaa;
+}
+
+.space-above {
+  margin-top: 25px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 23px;
+  padding: 0 0 20px;
+  border-bottom: 3px solid #2d3945;
+}
+
+.contact-info legend {
+  margin-bottom: 25px;
+}
+
+.newsletter-info legend {
+  margin-bottom: 6px;
+}
+
+.contact-info input, .contact-info select {
+  background-color: #eff0f1;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 45px;
+}
+
+.newsletter-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info input, .contact-info select {
+  margin: 5px 0 13px;
+}
+
+[placeholder] {
+  text-align: right;
+  padding-right: 17px;
+  font-style: italic;
+}
+
+#comment-area {
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  resize: none;
+  border-radius: 4px;
+  background: #eff0f1;
+}
+
+#sign-up {
+  padding: 15px;
+  background-color: #4ebbb5;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  height: 65px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 28px;
+}
+
+footer {
+  text-align: center;
+  padding: 16px 15px 150px;
+}
