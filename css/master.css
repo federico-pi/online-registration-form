@@ -1,24 +1,10 @@
-/* BUG:
-
-- Fix required alignment after click
-
-- Add :focus states to the form for when a user clicks or tabs into a text field
-
-- Change menu arrow
-
-- Change border color to focus to #46698b
-
-- click on checkboxes not working
-
-- Change placeholder color
-
-- Put padding on all inputs for improved writing
-
- */
-
 html {
-box-sizing: border-box;
-font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -105,14 +91,19 @@ label, p {
 }
 
 .contact-info select {
-  height: 56px;
+  height: 57px;
 }
 
-select[placeholder] {
+::placeholder {
   color: #4C4C4C;
   padding-left: 11px;
-  padding-right: 5px;
+  padding-right: 10px;
+  text-align: right;
   font-style: italic;
+}
+
+.contact-input {
+  padding: 10px;
 }
 
 #zip {
@@ -135,22 +126,21 @@ select[placeholder] {
   margin: 5px 0 13px;
 }
 
-input[placeholder] {
-  text-align: right;
-  padding-right: 17px;
-  font-style: italic;
-}
-
 #comment-area {
   width: 100%;
   height: 90px;
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   overflow-y: auto;
   resize: none;
   border-radius: 4px;
   background: #eff0f1;
+}
+
+#comment-area:focus {
+  outline: 0;
+  border: 2px solid #162861;
 }
 
 #sign-up {
@@ -168,6 +158,16 @@ input[placeholder] {
   cursor: pointer;
 }
 
+#sign-up:focus {
+  outline: 0;
+  border: 2px solid #162861;
+}
+
+.contact-info input:focus, select:focus, textarea:focus {
+  outline: 0;
+  border: 2px solid #162861;
+}
+
 footer {
   text-align: center;
   padding: 16px 15px 150px;
@@ -177,6 +177,12 @@ footer {
   main {
     width: 50%;
     margin: auto;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   h1 {
@@ -191,11 +197,30 @@ footer {
     padding-top: 35px;
   }
 
-  #zip {
-    width: 25vw;
+  #comment-area {
+    height: 135px;
   }
 
   footer {
     padding-bottom: 280px;
+  }
+
+  .contact-info input, .contact-info select {
+    width: 70%;
+    margin: 13px 0;
+  }
+
+  .contact-label {
+    width: 30%;
+    margin: auto 0;
+  }
+
+  .zip-code {
+    display: flex;
+    width: 100%;
+  }
+
+  #zip {
+    width: 35%;
   }
 }
