@@ -198,6 +198,10 @@ footer {
     padding-top: 35px;
   }
 
+  label, p {
+    font-size: 15px;
+  }
+
   #comment-area {
     height: 135px;
   }
@@ -207,12 +211,12 @@ footer {
   }
 
   .contact-info input, .contact-info select {
-    width: 70%;
+    width: 65%;
     margin: 13px 0;
   }
 
   .contact-label {
-    width: 30%;
+    width: 35%;
     margin: auto 0;
   }
 
@@ -222,6 +226,6 @@ footer {
   }
 
   #zip {
-    width: 35%;
+    width: 25%;
   }
 }
