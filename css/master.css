@@ -107,11 +107,12 @@ label, p {
 }
 
 #zip {
-  width: 47vw;
+  width: 50%;
 }
 
 .zip-code {
   display: block;
+  width: 100%
 }
 
 .newsletter-info {
